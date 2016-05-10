@@ -1,6 +1,9 @@
 require 'java'
 require 'drb/drb'
 require 'bundler/setup'
+require 'jar-dependencies'
+
+Jars.require_jars_lock!
 
 # The URI for the server to connect to
 SERVER_URI = 'druby://0.0.0.0:8787'.freeze
