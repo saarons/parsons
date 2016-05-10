@@ -8,7 +8,7 @@ ADD Gemfile /usr/src/app/
 ADD Gemfile.lock /usr/src/app/
 ADD Jarfile /usr/src/app/
 RUN bundle install
-RUN lock_jars
+RUN bundle exec lock_jars
 
 ADD . /usr/src/app
 
