@@ -9,7 +9,7 @@ ADD Gemfile /usr/src/app/
 ADD Gemfile.lock /usr/src/app/
 ADD Jarfile /usr/src/app/
 ADD Jarfile.lock /usr/src/app/
-RUN jbundle install
+RUN jbundle install --path vendor/cache
 
 ADD . /usr/src/app
 
